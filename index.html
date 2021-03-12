@@ -4,6 +4,7 @@
         <title>Google Home Page</title>
         <style>
             body{
+                postion:relative;
                 height:100vh;
                 width: 100vw;
                 margin: 0;
@@ -13,14 +14,15 @@
             * {
                 box-sizing: border-box;
             }
-           #main{
+           #mainbar{
                position: absolute;
                top: 50%;
-               transform: translateY(-50%)
+               left: 50%;
+               transform:translate(-50%, -50%)
            }
-          main{
-              text-align: center;
-          }
+           main{
+               text-align: center;
+           }
          nav ul{
               list-style: none;
               padding: 0;
@@ -42,28 +44,27 @@
           li a:hover{
             background-color: darkslategrey;
           }
-          
         </style>
     </head>
     <body>
         <header>
             <nav>
                 <ul>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://www.google.com/webhp?tab=ww">Search</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://www.google.com/imghp?hl=en&tab=wi">Images</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://maps.google.com/maps?hl=en&tab=wl">Maps</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://play.google.com/?hl=en&tab=w8">Play</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://www.youtube.com/?gl=US&tab=w1">YouTube</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://news.google.com/?tab=wn">News</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://mail.google.com/mail/?tab=wm">Gmail</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://drive.google.com/?tab=wo">Drive</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://www.google.com/intl/en/about/products?tab=wh">More</a></li>
-                    <li><a href="https://web.archive.org/web/20210131235934/https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ">Signin</a></li>
+                    <li class="search"><a href="https://web.archive.org/web/20210131235934/https://www.google.com/webhp?tab=ww">Search</a></li>
+                    <li class="images"><a href="https://web.archive.org/web/20210131235934/https://www.google.com/imghp?hl=en&tab=wi">Images</a></li>
+                    <li class="maps"><a href="https://web.archive.org/web/20210131235934/https://maps.google.com/maps?hl=en&tab=wl">Maps</a></li>
+                    <li class="play"><a href="https://web.archive.org/web/20210131235934/https://play.google.com/?hl=en&tab=w8">Play</a></li>
+                    <li class="youtube"><a href="https://web.archive.org/web/20210131235934/https://www.youtube.com/?gl=US&tab=w1">YouTube</a></li>
+                    <li class="news"><a href="https://web.archive.org/web/20210131235934/https://news.google.com/?tab=wn">News</a></li>
+                    <li class="gmial"><a href="https://web.archive.org/web/20210131235934/https://mail.google.com/mail/?tab=wm">Gmail</a></li>
+                    <li class="drive"><a href="https://web.archive.org/web/20210131235934/https://drive.google.com/?tab=wo">Drive</a></li>
+                    <li class="more"><a href="https://web.archive.org/web/20210131235934/https://www.google.com/intl/en/about/products?tab=wh">More</a></li>
+                    <li class="signin"><a href="https://web.archive.org/web/20210131235934/https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ">Signin</a></li>
                 </ul>
             </nav>
         </header>
         <main>
-            <div id="main">
+            <div id="mainbar">
                 <div id="img">
                     <img src="googlelogo.png" alt="google logo">
                 </div>
