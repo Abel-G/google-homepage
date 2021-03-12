@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Google Home Page</title>
+        <style>
+            body{
+                height:100vh;
+                width: 100vw;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            * {
+                box-sizing: border-box;
+            }
+           #main{
+               position: absolute;
+               top: 50%;
+               transform: translateY(-50%)
+           }
+          main{
+              text-align: center;
+          }
+         nav ul{
+              list-style: none;
+              padding: 0;
+              margin: 0;
+              background:#333;
+          }
+          nav ul{
+              display: flex;
+              justify-content: flex-start;
+          }
+          li a{
+            display: block;
+            color:white;
+            text-align: center;
+            padding: 5px 15px;
+            text-decoration: none;
+            font-size:small;
+          }
+          li a:hover{
+            background-color: darkslategrey;
+          }
+          
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://www.google.com/webhp?tab=ww">Search</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://www.google.com/imghp?hl=en&tab=wi">Images</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://maps.google.com/maps?hl=en&tab=wl">Maps</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://play.google.com/?hl=en&tab=w8">Play</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://www.youtube.com/?gl=US&tab=w1">YouTube</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://news.google.com/?tab=wn">News</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://mail.google.com/mail/?tab=wm">Gmail</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://drive.google.com/?tab=wo">Drive</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://www.google.com/intl/en/about/products?tab=wh">More</a></li>
+                    <li><a href="https://web.archive.org/web/20210131235934/https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ">Signin</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="main">
+                <div id="img">
+                    <img src="googlelogo.png" alt="google logo">
+                </div>
+                <form>
+                    <input type="text" style="width: 500px; margin: 10px"> <br>
+                    <input type="button" value="Google Search">
+                    <input type="button" value="I'm Feeling Lucky">
+                </form>
+             </div>
+        </main>
+    </body>
+</html>
