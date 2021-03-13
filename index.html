@@ -4,7 +4,7 @@
         <title>Google Home Page</title>
         <style>
             body{
-                postion:relative;
+                
                 height:100vh;
                 width: 100vw;
                 margin: 0;
@@ -33,7 +33,7 @@
               display: flex;
               justify-content: flex-start;
           }
-          li a{
+          nav ul li a{
             display: block;
             color:white;
             text-align: center;
@@ -41,8 +41,43 @@
             text-decoration: none;
             font-size:small;
           }
-          li a:hover{
+          nav ul li a:hover{
             background-color: darkslategrey;
+          }
+          .footer{
+              width: 100%;
+              bottom: 0;
+              left: 0;
+              background: #ddd;
+          }
+          .footer{
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              display: flex;
+              justify-content: space-between;
+          }
+          .footer div ul{
+              list-style:none;
+              padding: 0;
+              margin: 0;
+          }
+          .footer div ul{
+              display: flex;
+              justify-content: flex-start;
+              overflow: hidden;
+              padding: 15px; 0;
+          }
+         .footer ul li a{
+            color: #333;
+            text-align: center;
+            padding: 5px 15px;
+            text-decoration: none;
+            font-size:small;
+          }
+          .footer ul li a:hover{
+              text-decoration: underline;
+
           }
         </style>
     </head>
@@ -50,16 +85,16 @@
         <header>
             <nav>
                 <ul>
-                    <li class="search"><a href="https://web.archive.org/web/20210131235934/https://www.google.com/webhp?tab=ww">Search</a></li>
-                    <li class="images"><a href="https://web.archive.org/web/20210131235934/https://www.google.com/imghp?hl=en&tab=wi">Images</a></li>
-                    <li class="maps"><a href="https://web.archive.org/web/20210131235934/https://maps.google.com/maps?hl=en&tab=wl">Maps</a></li>
-                    <li class="play"><a href="https://web.archive.org/web/20210131235934/https://play.google.com/?hl=en&tab=w8">Play</a></li>
-                    <li class="youtube"><a href="https://web.archive.org/web/20210131235934/https://www.youtube.com/?gl=US&tab=w1">YouTube</a></li>
-                    <li class="news"><a href="https://web.archive.org/web/20210131235934/https://news.google.com/?tab=wn">News</a></li>
-                    <li class="gmial"><a href="https://web.archive.org/web/20210131235934/https://mail.google.com/mail/?tab=wm">Gmail</a></li>
-                    <li class="drive"><a href="https://web.archive.org/web/20210131235934/https://drive.google.com/?tab=wo">Drive</a></li>
-                    <li class="more"><a href="https://web.archive.org/web/20210131235934/https://www.google.com/intl/en/about/products?tab=wh">More</a></li>
-                    <li class="signin"><a href="https://web.archive.org/web/20210131235934/https://accounts.google.com/ServiceLogin?hl=en&passive=true&continue=https://www.google.com/&ec=GAZAAQ">Signin</a></li>
+                    <li class="search"><a href="#">Search</a></li>
+                    <li class="images"><a href="#">Images</a></li>
+                    <li class="maps"><a href="#">Maps</a></li>
+                    <li class="play"><a href="#">Play</a></li>
+                    <li class="youtube"><a href="#">YouTube</a></li>
+                    <li class="news"><a href="#">News</a></li>
+                    <li class="gmial"><a href="#">Gmail</a></li>
+                    <li class="drive"><a href="#">Drive</a></li>
+                    <li class="more"><a href="#">More</a></li>
+                    <li class="signin"><a href="#">Signin</a></li>
                 </ul>
             </nav>
         </header>
@@ -75,5 +110,21 @@
                 </form>
              </div>
         </main>
+        <div class="footer">
+            <div>
+                <ul>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">BUsiness</a></li>
+                    <li><a href="#">How Search Work</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
